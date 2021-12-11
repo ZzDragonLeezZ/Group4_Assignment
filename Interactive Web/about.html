@@ -1,0 +1,496 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/navbar-top-fixed.css">
+
+</head>
+
+  <!-- Web title -->
+<head>
+  <title> Vets for Pet Animal Clinic </title>
+  <style media="screen">
+    a.nav-link:link {
+      text-decoration: none;
+      font-family: Roboto;
+      color: black;
+      font-size: 25px;
+      padding: 14px 16px;
+    }
+
+    a.nav-link:visited {
+      color: black;
+      background-color: #90E0EF;
+      text-decoration: none;
+      padding: 14px 16px;
+    }
+
+    a.nav-link:hover {
+      color: black;
+      background-color: #90E0EF;
+      text-decoration: none;
+      padding: 14px 16px;
+    }
+
+    a.nav-link:active {
+      color: black;
+      background-color: #90E0EF;
+      text-decoration: none;
+      padding: 14px 16px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;}
+
+
+/*this is slideshow class*/
+
+}
+
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+  </style>
+</head>
+
+  <!-- Top Navication -->
+  <nav class="navbar navbar-expand-md navbar-light relative-top bg-#CAF0F8" style="display: flex;
+                                                                                justify-content: space-around;
+                                                                                align-items: center;
+                                                                                padding:60px;
+                                                                                padding-left: 10%;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+      <img  src="Logo.png" alt="logo" width="260">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+          <li class="nav-item" style="display: inline-block; padding: 20px 54px; ">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item" style="display: inline-block; padding: 20px 54px; ">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item" style="display: inline-block; padding: 20px 54px; ">
+            <a class="nav-link" href="service.html">Service</a>
+          </li>
+          <li class="nav-item" style="display: inline-block; padding: 20px 54px; ">
+            <a class="nav-link" href="appointment.html">Appointment</a>
+          </li>
+          <li class="nav-item" style="display: inline-block; padding: 20px 54px;">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Web title -->
+<body style="overflow-x: hidden;">
+  <img src="About Us Picture 1.png" alt="Image 1" width="100%" ;>
+  <h1 style="padding: 50px; text-align: center; font-weight: bold;">About Us</h1>
+  <h2 style="padding: 10px; text-align: center;">Vets for Pet Animal Clinic</h2>
+
+
+          <hr style="height:3px ;width:90% ;margin-left:5% ;margin-top:10% ;margin-bottom: 10% ;color:#000000;">
+
+          <div style="position: relative; text-align: center;  color: white">
+            <img src="About Us Picture 2.png" alt="Image 2" style="width:100%;">
+            <div style="position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size:2vw;
+                        font-family: Cairo;
+                        text-align: left;">Vets for Pets Animal Clinic(VPAC)is a well-established,full service, small animal and exotic veterinary clinic providing comprehensive preventive, medical,surgical and dental care.We provide a broad spectrum of diagnostic procedures through in-house testing and the use of external laboratories.We also work closely with local practices when special diagnostic procedures are required</div>
+
+          </div>
+
+  <h1 style="padding: 50px; text-align: center; font-weight: bold;">OUR TEAM</h1>
+
+  <div style="background-color: #CAF0F8; width:100% ; height: 2000px" >
+
+  <h1 style="padding: 50px; text-align: left; font-weight: bold;">Veterinary Surgeon</h1>
+
+  <div class="row">
+  <div class="column" style="">
+    <img src="Dr. Robyn Loke.jpeg" class="center" style="height:240px; width:220px">
+    <div>
+      <p style="font-weight: bold ;text-align:center;">Dr. Robyn Loke <br><sub>(D.V.M., U.P.M.)</sub></p>
+  </div>
+  </div>
+
+    <div class="column" style="">
+    <img src="Dr. Au Lai Yin.jpeg" class="center" style="height:240px; width:220px">
+      <p style="font-weight: bold ; text-align:center;">Dr. Au Lai Yin<br><sub>(D.V.M., U.P.M.)</sub></p>
+
+    </div>
+
+    <div class="column" style="">
+    <img src="Dr. Calvin Cheah.jpeg" class="center" style="height:240px; width:220px">
+      <p style="font-weight: bold ; text-align:center;">Dr. Calvin Cheah<br><sub>(D.V.M., U.P.M.)</sub></p>
+
+    </div>
+
+    <div class="column" style="">
+    <img src="Dr. Chantal Ng.jpeg" class="center" style="height:240px; width:220px">
+      <p style="font-weight: bold ; text-align:center;">Dr. Chantal Ng<br><sub>(BSc. D.V.M., Murdoch)</sub></p>
+
+  ​</p>
+    </div>
+
+    <div class="column" style="">
+    <img src="Dr. Mandy Choy.jpeg" class="center" style="height:240px; width:220px">
+      <p style="font-weight: bold ; text-align:center;">Dr. Mandy Choy<br><sub>(D.V.M., U.P.M.)</sub></p>
+
+    </div>
+
+    <div class="column" style="">
+    <img src="Dr. Lee Jin Ee.jpeg" class="center" style="height:240px; width:220px">
+      <p style="font-weight: bold ; text-align:center;">Dr. Lee Jin Ee<br><sub>(BVSc. USyd)</sub></p>
+
+  </p>
+    </div>
+
+    <div class="column" style="">
+    <img src="Dr. Tee Jinrhu.jpg" class="center" style="height:240px; width:220px">
+      <p style="font-weight: bold ; text-align:center;">Dr. Tee Jinrhu<br><sub>(D.V.M., U.P.M.)</sub></p>
+
+    </div>
+
+    <div class="column" style="">
+    <img src="Dr. Jasmine Cheah.png" class="center" style="height:240px; width:220px">
+      <p style="font-weight: bold ; text-align:center;">Dr. Jasmine Cheah<br><sub>(BVSc. USyd)</sub></p>
+
+  </p>
+    </div>
+
+    <div class="column" style="">
+    <img src="Dr. Shoby Raj.jpg" class="center" style="height:240px; width:220px">
+      <p style="font-weight: bold ; text-align:center;">Dr. Shoby Raj<br><sub>(D.V.M., I.P.D.)</sub></p>
+
+    </div>
+
+
+    <h1 style="padding: 50px; text-align: left ; font-weight: bold;">Veterinary Assistant</h1>
+
+    <div class="row">
+        <div class="column" style="">
+    <img src="Molly.jpg" class="center" style="height:220px; width:220px">
+      <p style="font-weight: bold ; text-align:center;">Molly</p>
+
+    </div>
+
+    <div class="column" style="">
+    <img src="Cris Chun.jpg" class="center" style="height:220px; width:220px">
+      <p style="font-weight: bold ; text-align:center;">Cris Chun</p>
+
+    </div>
+
+    <div class="column" style="">
+    <img src="Leona Yow.jpeg" class="center" style="height:220px; width:220px">
+      <p style="font-weight: bold ; text-align:center;">Leona Yow</p>
+
+    </div>
+  </div>
+
+    <h1 style="padding: 50px; text-align: left; font-weight: bold;">Veterinary Support Assistant</h1>
+
+
+    <div class="row">
+        <div class="column" style="">
+    <img src="Khurshed.jpeg" class="center" style="height:220px; width:220px">
+      <p style="font-weight: bold ; text-align:center;">Khurshed</p>
+
+    </div>
+
+    <div class="column" style="">
+    <img src="Sunny.jpg" class="center" style="height:220px; width:220px">
+      <p style="font-weight: bold ; text-align:center;">Sunny</p>
+
+    </div>
+
+
+
+
+
+  </div>
+
+  <div style="background-color: #90E0EF; width:100% ; height: 150px" >
+    <h1 style="padding: 50px; text-align: center; font-weight: bold;">THE
+  GALLERY</h1>
+
+  </div>
+  <div>
+
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / </div>
+      <img src="Place Picture 1.webp" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 2</div>
+      <img src="Place Picture 2.webp" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="Place Picture 3.webp" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="Place Picture 4.webp" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="Place Picture 5.webp" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="Place Picture 7.webp" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="Place Picture 13.webp" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="Place Picture 9.webp" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="Place Picture 10.webp" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="Place Picture 11.webp" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="Place Picture 12.webp" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="Place Picture 17.webp" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="Place Picture 15.webp" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+      <span class="dot" onclick="currentSlide(10)"></span>
+      <span class="dot" onclick="currentSlide(11)"></span>
+      <span class="dot" onclick="currentSlide(12)"></span>
+      <span class="dot" onclick="currentSlide(13)"></span>
+      <span class="dot" onclick="currentSlide(14)"></span>
+      <span class="dot" onclick="currentSlide(15)"></span>
+    </div>
+
+  </div>
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+  </body>
+  </html>

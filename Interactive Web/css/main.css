@@ -1,0 +1,40 @@
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+.navbar{
+              background-color: #CAF0F8;
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              padding:60px;
+}
+.a.one:link {
+  text-decoration: none;
+  font-family: Roboto;
+  color: black;
+  font-size: 25px;
+  padding: 14px 16px;
+}
+
+.a.one:visited {
+  color: black;
+  background-color: #90E0EF;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+.a.one:hover {
+  color: black;
+  background-color: #90E0EF;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+.a.one:active {
+  color: black;
+  background-color: #90E0EF;
+  text-decoration: none;
+  padding: 14px 16px;
+}
