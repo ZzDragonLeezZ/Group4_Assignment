@@ -14,3 +14,30 @@
       display: none;
     }
   }
+@media all and (max-width: 500px) {
+  .hi{
+    display: none;
+  }
+}
+
+
+.btn-outline-dark {
+  color: black;
+  background-color: white;
+  border-radius: 0.9rem;
+  border: 2px solid black(0, 70, 147, 0.75);
+}
+
+.form-select {
+  border-top-left-radius: 0.9rem;
+  border-bottom-left-radius: 0.9rem;
+  border-top-right-radius: 0.9rem;
+  border-bottom-right-radius: 0.9rem;
+}
+
+.form-control {
+  border-top-left-radius: 0.9rem;
+  border-bottom-left-radius: 0.9rem;
+  border-top-right-radius: 0.9rem;
+  border-bottom-right-radius: 0.9rem;
+}
